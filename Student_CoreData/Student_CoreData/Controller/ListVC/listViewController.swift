@@ -49,7 +49,7 @@ extension listViewController: UITableViewDataSource {
 
 extension listViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 220
+        return 160
     }
     
     // MARK: Delete TableView Cell

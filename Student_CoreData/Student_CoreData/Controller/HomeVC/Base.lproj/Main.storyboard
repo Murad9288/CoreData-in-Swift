@@ -22,6 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="QPN-L5-QRt"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="name"/>
                             </textField>
@@ -41,6 +42,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="3PA-ue-nJe"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="address-level1+2"/>
                             </textField>
@@ -50,6 +52,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="Yof-IN-aV5"/>
                                 </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes" smartQuotesType="yes" textContentType="tel"/>
                             </textField>
@@ -107,7 +110,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zPv-K9-dCa" secondAttribute="trailing" constant="48" id="3Fd-hj-Ee4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lct-33-53H" secondAttribute="trailing" constant="20" id="Cbf-Ng-vUb"/>
@@ -152,8 +155,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-KO-rn4">
-                                <rect key="frame" x="0.0" y="129" width="393" height="640"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9JY-KO-rn4">
+                                <rect key="frame" x="0.0" y="129" width="393" height="680"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="StudentTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="k70-jx-iIn" customClass="StudentTableViewCell" customModule="Student_CoreData" customModuleProvider="target">
@@ -182,15 +185,15 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lob-KQ-Ckw"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yNE-ur-a9x" firstAttribute="leading" secondItem="lob-KQ-Ckw" secondAttribute="leading" constant="20" id="3ud-73-lR5"/>
-                            <constraint firstItem="lob-KQ-Ckw" firstAttribute="trailing" secondItem="9JY-KO-rn4" secondAttribute="trailing" id="84B-YZ-pUm"/>
-                            <constraint firstItem="9JY-KO-rn4" firstAttribute="top" secondItem="yNE-ur-a9x" secondAttribute="bottom" constant="20" id="Dkj-QP-jBH"/>
                             <constraint firstItem="lob-KQ-Ckw" firstAttribute="trailing" secondItem="yNE-ur-a9x" secondAttribute="trailing" constant="20" id="OXU-fw-MMi"/>
+                            <constraint firstItem="9JY-KO-rn4" firstAttribute="leading" secondItem="lob-KQ-Ckw" secondAttribute="leading" id="Oeh-gJ-JQA"/>
+                            <constraint firstAttribute="bottom" secondItem="9JY-KO-rn4" secondAttribute="bottom" constant="43" id="YlF-5x-7zv"/>
+                            <constraint firstItem="9JY-KO-rn4" firstAttribute="top" secondItem="yNE-ur-a9x" secondAttribute="bottom" constant="20" id="d0H-JK-nvG"/>
                             <constraint firstItem="yNE-ur-a9x" firstAttribute="top" secondItem="lob-KQ-Ckw" secondAttribute="top" constant="10" id="gI0-MC-coZ"/>
-                            <constraint firstItem="9JY-KO-rn4" firstAttribute="leading" secondItem="lob-KQ-Ckw" secondAttribute="leading" id="gVA-K3-fnd"/>
-                            <constraint firstItem="lob-KQ-Ckw" firstAttribute="bottom" secondItem="9JY-KO-rn4" secondAttribute="bottom" id="yOD-pt-pgO"/>
+                            <constraint firstItem="9JY-KO-rn4" firstAttribute="trailing" secondItem="lob-KQ-Ckw" secondAttribute="trailing" id="zoT-tk-sRD"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -201,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePI-Ox-Qfo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="-2"/>
+            <point key="canvasLocation" x="1638.9312977099237" y="-2.1126760563380285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0fk-c0-z5a">
@@ -231,8 +234,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

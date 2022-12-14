@@ -28,18 +28,37 @@ class ViewController: UIViewController {
     private func viewPlusButtonAnimationConfiguration() {
         myView.pulsate()
         myView.layer.cornerRadius = 28.9
-        
     }
     
     
     @IBAction func saveButtonAction(_ sender: UIButton) {
         sender.showAnimation { [self] in
-            let dict = ["name" : textName.text, "address" : textAddress.text, "city" : textCity.text, "mobile" : textMobile.text]
-            if isUpdateData {
-                DatabaseHelper.shareInstance.editData(object: dict as! [String:String], i: i)
-            }else{
-                DatabaseHelper.shareInstance.save(object: dict as! [String:String])
+            
+            // Create Alert Action
+            let alerAction = UIAlertController(title: "Confirm", message: "Are you sure to save this information data?", preferredStyle: .alert)
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "OK", style: .default, handler: { [self] (action) -> Void in
+                
+                let dict = ["name" : textName.text, "address" : textAddress.text, "city" : textCity.text, "mobile" : textMobile.text]
+                if isUpdateData {
+                    DatabaseHelper.shareInstance.editData(object: dict as! [String:String], i: i)
+                }else{
+                    DatabaseHelper.shareInstance.save(object: dict as! [String:String])
+                }
+                
+                //print("Ok button tapped")
+            })
+            
+            // Create Cancel button with action handlder
+            let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+                //print("Cancel button tapped")
             }
+            //Add OK and Cancel button to an Alert object
+            alerAction.addAction(ok)
+            alerAction.addAction(cancel)
+            // Present alert message to user
+            self.present(alerAction, animated: true, completion: nil)
+           
         }
     }
     
@@ -97,13 +116,13 @@ public extension UIView {
 extension UIView {
     func pulsate() {
         let pulse = CASpringAnimation(keyPath: "transform.scale")
-        pulse.duration = 0.80
+        pulse.duration = 1
         pulse.fromValue = 0.90
         pulse.toValue = 1
         pulse.autoreverses = true
         pulse.repeatCount = 10000000000
         pulse.initialVelocity = 0.98
-        pulse.damping = 10
+        pulse.damping = 1000000
         layer.add(pulse, forKey: "pulse")
     }
 }
