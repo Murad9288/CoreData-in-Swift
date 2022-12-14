@@ -14,12 +14,12 @@
 ## Example Photo ->:
 |Image-1|Image-2|Image-3|Image-4|
 |---|---|---|---|
-|<img src= './Image sample/1.png' width='220px'>|<img src='./Image sample/2.png' width='220px'>|<img src='./Image sample/4.png' width='220px'>|<img src='./Image sample/4.png' width='220px'>|
+|<img src= './Image sample/1.png' width='220px'>|<img src='./Image sample/2.png' width='220px'>|<img src='./Image sample/5.png' width='220px'>|<img src='./Image sample/4.png' width='220px'>|
 <br/>
 
 ## Example Gif Photo ->:
-|Image-5|Gif-1|Gif-2|
-|---|---|---|
-|<img src= './Image sample/5.png' width='220px' height='500px'>|<img src='./Image sample/1.gif' width='220px'>|<img src='./Image sample/2.gif' width='220px'>|
+|Image-5|Gif-1|
+|---|---|
+|<img src='./Image sample/1.gif' width='220px'>|<img src='./Image sample/2.gif' width='220px'>|
 
 </div>
